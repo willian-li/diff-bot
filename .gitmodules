@@ -1,0 +1,7 @@
+[submodule "diffdrive_stm"]
+	path = diffdrive_stm
+	url = git@github.com:willian-li/diff_robot.git
+	branch = humble
+[submodule "ros2_astra_camera"]
+	path = ros2_astra_camera
+	url = https://github.com/orbbec/ros2_astra_camera.git
