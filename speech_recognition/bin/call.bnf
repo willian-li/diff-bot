@@ -1,0 +1,37 @@
+﻿#BNF+IAT 1.0 UTF-8;
+!grammar call;
+!slot <want>;
+!slot <action1>;
+!slot <action2>;
+!slot <action3>;
+!slot <action4>;
+!slot <action5>;
+
+!slot <object1>;
+!slot <object2>;
+!slot <object3>;
+!slot <object4>;
+!slot <object5>;
+
+!slot <num>;
+
+!start <callstart>;
+
+<callstart>:[<want>]<action1><object1>|[<want>]<action2><object2>|<action3><object3>|<action4>[<num>]<object4>|<action5><object5>;
+<want>:我想|我要|请|帮我|我想要|请帮我;
+
+<action1>:打开|关闭;
+<object1>:自主建图|导航|空调|窗帘|灯光;
+
+<action2>:查询|查;
+<object2>:天气|新闻|血氧|心率|血压;
+
+<action3>:前进|后退;
+<object3>:一点|一步|两步|三步|1点|2点|3点;
+
+<action4>:转;
+<num>:个|一|两|二|三|1|2|3;
+<object4>:圈;
+
+<action5>:导航去|去|到;
+<object5>:刘总办公室|叶老师办公室|茶水间|大屏幕;
