@@ -1,22 +1,37 @@
-#pragma once
+#ifndef I2C_SENSOR_HPP
+#define I2C_SENSOR_HPP
 
-#include "sensor_common.hpp"
 #include <string>
+#include <fcntl.h>
+#include <unistd.h>
+#include <sys/ioctl.h>
+extern "C" {
+#include <linux/i2c-dev.h>
+#include <linux/i2c.h>
+#include <i2c/smbus.h>
+}
+#include <iostream>
+#include <chrono>
+#include <cstring>
 using namespace std::chrono_literals;
 
-class I2CSensor : public SensorBase {
+class I2CSensor {
 public:
-    I2CSensor(const std::string& node_name, const std::string& i2c_device, int device_address);
-    virtual ~I2CSensor();
+    I2CSensor();
+    ~I2CSensor();
+
+    bool connect(const std::string& i2c_device, int device_address);
 
     bool readData();
-    virtual std::string getData() const override;
-    bool set_single(const uint8_t *config,uint8_t  len);
-    bool writeConfig(int channel, uint16_t mygain);
-    bool sendRecBytes(
-    const int addr,
-    uint8_t *sbuf, const int slen,
-    uint8_t *rbuf, const int rlen);
+    struct SensorData {
+        double data0;
+        double data1;
+        double data2;
+        double data3;
+    };
+
+    SensorData getSensorData() const; 
+
 
 private:
     // ADS1115 Register Map
@@ -71,9 +86,12 @@ private:
     #define ADS1115_REG_CONFIG_CQUE_4CONV	0x02 
     #define ADS1115_REG_CONFIG_CQUE_NONE	0x03 
 
-    std::string i2cDevice;
-    int address;
+
     int fileDescriptor;
-    std::string data;
-    rclcpp::TimerBase::SharedPtr sensortimer_;
+    SensorData sensor_data_;  
+
+    bool set_single(const uint8_t *config);
+    bool writeConfig(int channel, uint16_t mygain);
 };
+
+#endif // I2C_SENSOR_HPP

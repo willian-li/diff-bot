@@ -5,17 +5,22 @@ if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
 endif()
 
-set(executable_name communication_node)
-set(library_name ${executable_name}_core)
-set(dependencies
-  rclcpp
-  interfaces
-)
-
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(interfaces REQUIRED) 
+find_package(micro_sensor REQUIRED) 
+find_package(rclcpp_lifecycle REQUIRED) 
+
+set(executable_name communication_node)
+set(library_name ${executable_name}_core)
+
+set(dependencies
+  rclcpp
+  interfaces
+  micro_sensor
+  rclcpp_lifecycle
+)
 
 
 
@@ -29,10 +34,19 @@ ament_target_dependencies(${library_name}  ${dependencies})
 
 target_include_directories(${library_name} PUBLIC include/communication)
 
+# 管理库
+add_library(manager_core
+  src/sensor_manager.cpp
+)
+ament_target_dependencies(manager_core  ${dependencies})
+target_include_directories(manager_core PUBLIC include/communication )
+target_link_libraries(manager_core serial)
+
 #执行文件
 add_executable(${executable_name} src/main.cpp)
 ament_target_dependencies(${executable_name} ${dependencies})
-target_link_libraries(${executable_name} ${library_name})
+target_link_libraries(${executable_name} manager_core)
+target_include_directories(${executable_name} PUBLIC include )
 
 
 install(TARGETS ${executable_name}

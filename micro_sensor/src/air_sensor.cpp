@@ -1,12 +1,7 @@
-#include "air_sensor.hpp"
+#include "micro_sensor/air_sensor.hpp"
 
-AirSensor::AirSensor() : SensorBase("air_sensor_node") {
-    // 构造函数的实现
-    connect("/dev/ttyS4", 9600);
-    sensortimer_ = this->create_wall_timer(
-      500ms, std::bind(&AirSensor::readData, this));
-    RCLCPP_INFO(this->get_logger(), "read data...");
-
+AirSensor::AirSensor(){
+    std::cout <<"init air sensor"<<std::endl;
 }
 AirSensor::~AirSensor()
 {
@@ -41,7 +36,6 @@ bool AirSensor::connect(const std::string &serial_device, int32_t baud_rate) {
     serial_.SetCharacterSize(LibSerial::CharacterSize::CHAR_SIZE_8);
     serial_.SetParity(LibSerial::Parity::PARITY_NONE);
     serial_.SetStopBits(LibSerial::StopBits::STOP_BITS_1);
-    RCLCPP_INFO(this->get_logger(), "air sensor initialized.");
     return true;
 }
 
@@ -63,27 +57,21 @@ bool AirSensor::readData() {
 
     if (test_data == sum)
     {
-        uint16_t PMS1 = (static_cast<uint16_t>(data_vector[10]) << 8) + static_cast<uint16_t>(data_vector[11]);
-        uint16_t PMS2_5 = (static_cast<uint16_t>(data_vector[12]) << 8) + static_cast<uint16_t>(data_vector[13]);
-        uint16_t PMS10 = (static_cast<uint16_t>(data_vector[14]) << 8) + static_cast<uint16_t>(data_vector[15]);
-        double TPS = (static_cast<double>((static_cast<uint16_t>(data_vector[24]) << 8) + static_cast<uint16_t>(data_vector[25])))/10;
-        double HDS = (static_cast<double>((static_cast<uint16_t>(data_vector[26]) << 8) + static_cast<uint16_t>(data_vector[27])))/10;
-        RCLCPP_INFO_STREAM(this->get_logger(), "PMS1:'" << PMS1 << "' " 
-                                                <<"PMS2_5:'" << PMS2_5 << "' "
-                                                <<"PMS10:'" << PMS10 << "' "
-                                                <<"TPS:'" << TPS << "' "
-                                                <<"HDS:'" << HDS << "' ");
+        sensor_data_.PMS1 = (static_cast<uint16_t>(data_vector[10]) << 8) + static_cast<uint16_t>(data_vector[11]);
+        sensor_data_.PMS2_5 = (static_cast<uint16_t>(data_vector[12]) << 8) + static_cast<uint16_t>(data_vector[13]);
+        sensor_data_.PMS10 = (static_cast<uint16_t>(data_vector[14]) << 8) + static_cast<uint16_t>(data_vector[15]);
+        sensor_data_.TPS = (static_cast<double>((static_cast<uint16_t>(data_vector[24]) << 8) + static_cast<uint16_t>(data_vector[25])))/10;
+        sensor_data_.HDS = (static_cast<double>((static_cast<uint16_t>(data_vector[26]) << 8) + static_cast<uint16_t>(data_vector[27])))/10;
+        return true;
     }
     else
     {
-        RCLCPP_INFO(this->get_logger(), "error data");
-        RCLCPP_INFO_STREAM(this->get_logger(), "test_data '" << test_data << "'" <<"sum '" << sum << "'" );
-
+        return false;
     }
 
-    return true;
+    
 }
 
-std::string AirSensor::getData() const {
-    return this->data;
+AirSensor::SensorData AirSensor::getSensorData() const {
+    return sensor_data_;
 }

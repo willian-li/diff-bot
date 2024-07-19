@@ -1,14 +1,16 @@
-#pragma once
+#ifndef AIR_SENSOR_HPP
+#define AIR_SENSOR_HPP
 
-#include "sensor_common.hpp"
 #include <libserial/SerialPort.h>
 
+#include <iostream>
+#include <vector>
 #include <chrono>
 #include <memory>
 
 using namespace std::chrono_literals;
 
-class AirSensor : public SensorBase {
+class AirSensor {
 public:
     AirSensor();
 
@@ -16,10 +18,24 @@ public:
     bool disconnect();
     bool readData();
 
-    std::string getData() const override;
+    std::string getData() const;
     ~AirSensor();
+
+    struct SensorData {
+        uint16_t PMS1;
+        uint16_t PMS2_5;
+        uint16_t PMS10;
+        double TPS;
+        double HDS;
+    };
+
+    SensorData getSensorData() const; 
+
 private:
     LibSerial::SerialPort serial_;
-    rclcpp::TimerBase::SharedPtr sensortimer_;
     int timeout_ms_;
+
+    SensorData sensor_data_;  
 };
+
+#endif // AIR_SENSOR_HPP
