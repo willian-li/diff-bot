@@ -202,7 +202,7 @@ int main(int argc, char **argv) {
   RCLCPP_INFO(node->get_logger(), "%s\n", "init success");
 
   //关键词识别登录初始化
-  const char *login_config = "appid = 1ec600ea";  //登录参数
+  const char *login_config = "appid = 93f704a1";  //登录参数
   int ret = 0;
   ret = MSPLogin(NULL, NULL, login_config);
   if (MSP_SUCCESS != ret) {
@@ -235,13 +235,10 @@ int main(int argc, char **argv) {
               std::cout << "转1圈" << std::endl;
             }
           }
-        } else {
-          processSpeechRecognizer();
-        }
+        } 
 
-      } else {
-        processSpeechRecognizer();
-      }
+      } 
+      processSpeechRecognizer();
       Microsoft_CognitiveServices = 0;
     }
 
