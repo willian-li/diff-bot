@@ -7,6 +7,9 @@ CommunicationServer::CommunicationServer()
     "sensor_config", 10, std::bind(&CommunicationServer::sorcfg_callback, this, _1));
   command_sub_ = this->create_subscription<interfaces::msg::Command>(
     "command", 10, std::bind(&CommunicationServer::command_callback, this, _1));
+  
+   cmd_publisher_ = this->create_publisher<geometry_msgs::msg::Twist>(
+    "/cmd_vel_unstamped", 10);
 }
 
 void CommunicationServer::sorcfg_callback(const interfaces::msg::SensorConfig & msg) const
@@ -28,7 +31,7 @@ void CommunicationServer::command_callback(const interfaces::msg::Command & msg)
       handle_face_enrollment();
       break;
     case MotionID::SIMPLE_MOVE:
-      handle_simple_move();
+      handle_simple_move(msg.x);
       break;
     case MotionID::PUBLISH_NAV_POINT:
       handle_publish_nav_point();
@@ -65,8 +68,28 @@ void CommunicationServer::command_callback(const interfaces::msg::Command & msg)
   }
 }
 
-void CommunicationServer::handle_simple_move() const {
+void CommunicationServer::handle_simple_move(double &distance) const {
   RCLCPP_INFO(this->get_logger(), "Handling simple move.");
+  if (distance == 0) {
+    RCLCPP_ERROR(this->get_logger(), "Distance must be non-zero.");
+    return;
+  }
+  
+  auto message = geometry_msgs::msg::Twist();
+  double direction = (distance > 0) ? 1.0 : -1.0;
+  double abs_distance = std::abs(distance);
+  double duration = abs_distance / speed_;
+  auto start_time = this->now();
+  while (rclcpp::ok() && (this->now() - start_time).seconds() < duration) {
+    message.linear.x = direction * speed_;
+    message.angular.z = 0.0;
+    publisher_->publish(message);
+    rclcpp::sleep_for(100ms);  // 控制发布频率
+  }
+    // 停止机器人
+  message.linear.x = 0.0;
+  message.angular.z = 0.0;
+  publisher_->publish(message);
 }
 
 void CommunicationServer::handle_publish_nav_point() const {

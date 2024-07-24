@@ -7,6 +7,8 @@
 #include "rclcpp/rclcpp.hpp"
 #include "interfaces/msg/sensor_config.hpp"       
 #include "interfaces/msg/command.hpp"
+#include "geometry_msgs/msg/twist.hpp"
+
 
 using std::placeholders::_1;
 
@@ -51,8 +53,11 @@ private:
   void handle_enable_gesture_recognition() const;
   void handle_disable_gesture_recognition() const;
 
+  //上位机发送
   rclcpp::Subscription<interfaces::msg::SensorConfig>::SharedPtr sorcfg_sub_;
   rclcpp::Subscription<interfaces::msg::Command>::SharedPtr command_sub_;
+  
+  rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr cmd_publisher_;
 
   size_t count_;
 };

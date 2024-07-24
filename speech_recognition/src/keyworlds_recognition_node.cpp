@@ -72,7 +72,7 @@ void processSpeechRecognizer() {
       "5dcf6f4b26c348efa1164faa5ab432da", "australiaeast");
   config->SetSpeechRecognitionLanguage("zh-CN");
   auto speechRecognizer = SpeechRecognizer::FromConfig(config, audioConfig);
-  cout << "Say something...\n";
+  cout << "微软转文字...\n";
   auto result = speechRecognizer->RecognizeOnceAsync().get();
   // Checks result.
   cout << "RECOGNIZED: Text=" << result->Text << std::endl;
@@ -236,7 +236,6 @@ int main(int argc, char **argv) {
             }
           }
         } 
-
       } 
       processSpeechRecognizer();
       Microsoft_CognitiveServices = 0;

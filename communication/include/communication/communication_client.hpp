@@ -21,6 +21,8 @@ private:
   void maptimer_callback();
   void sensortimer_callback();
 
+
+  //上位机接收
   rclcpp::Publisher<interfaces::msg::Image>::SharedPtr image_pub_;     
   rclcpp::Publisher<interfaces::msg::Map>::SharedPtr map_pub_;     
   rclcpp::Publisher<interfaces::msg::Pos>::SharedPtr pos_pub_;     
