@@ -11,8 +11,8 @@
 
 #include "rclcpp/rclcpp.hpp"
 
-#include "communication/sensor_manager.hpp"
-// #include "communication/communication_server.hpp"
+
+#include "communication/communication_server.hpp"
 
 int main(int argc, char * argv[])
 {
@@ -23,17 +23,21 @@ int main(int argc, char * argv[])
 
   rclcpp::init(argc, argv);
 
-  rclcpp::executors::SingleThreadedExecutor exe;
+  rclcpp::executors::MultiThreadedExecutor  exe;
 
-  std::shared_ptr<SensorManager> sensor_node =
-    std::make_shared<SensorManager>("sensor_node");
+//   std::shared_ptr<SensorManager> sensor_node =
+//     std::make_shared<SensorManager>("sensor_node");
 
-  //   std::shared_ptr<CommunicationServer> communication =
-  //   std::make_shared<CommunicationServer>();
-  // communication->init();
-  exe.add_node(sensor_node->get_node_base_interface());
-  // exe.add_node(communication);
-  // exe.add_node(communication->get_node_base_interface());
+  std::shared_ptr<CommunicationServer> communication =
+    std::make_shared<CommunicationServer>();
+//   exe.add_node(sensor_node->get_node_base_interface());
+    
+  exe.add_node(communication->get_node_base_interface());
+
+    //   // 使用 lambda 表达式启动异步任务
+    // auto future = std::async(std::launch::async, [&communication]() {
+        communication->init();
+    // });
 
   exe.spin();
 

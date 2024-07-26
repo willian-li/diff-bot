@@ -42,6 +42,6 @@ if(BUILD_TESTING)
 endif()
 
 # ament_export_targets(HAS_LIBRARY_TARGET)
-ament_export_include_directories("include")
+ament_export_include_directories(include)
 ament_export_libraries(${library_name})
 ament_package()

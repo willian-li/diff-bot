@@ -3,19 +3,29 @@
 
 #include <chrono>
 #include <memory>
+#include <string>
 
 #include "rclcpp/rclcpp.hpp"
 #include "interfaces/msg/sensor_config.hpp"       
 #include "interfaces/msg/command.hpp"
 #include "geometry_msgs/msg/twist.hpp"
 
+#include "lifecycle_msgs/msg/state.hpp"
+#include "lifecycle_msgs/msg/transition.hpp"
+#include "lifecycle_msgs/srv/change_state.hpp"
+#include "lifecycle_msgs/srv/get_state.hpp"
+
+#include "lifecycle_manager.hpp"
+
 
 using std::placeholders::_1;
+using namespace std::chrono_literals;
 
 class CommunicationServer : public rclcpp::Node
 {
 public:
   CommunicationServer();
+  void init();
 
 private:
   enum class MotionID {
@@ -35,16 +45,21 @@ private:
     DISABLE_GESTURE_RECOGNITION = 31
   };
 
+  //改变状态
+  // void callee_script(std::shared_ptr<LifecycleServiceClient> lc_client);
 
-  void sorcfg_callback(const interfaces::msg::SensorConfig & msg) const;
-  void command_callback(const interfaces::msg::Command & msg) const;
+  //回调函数
+  void sorcfg_callback(const interfaces::msg::SensorConfig & msg) ;
+  void command_callback(const interfaces::msg::Command & msg) ;
+
+  //事件处理函数
   void handle_get_current_position() const;
   void handle_start_recognizing_speech() const;
   void handle_face_enrollment() const;
-  void handle_simple_move() const;
+  void handle_simple_move(double distance) const;
   void handle_publish_nav_point() const;
   void handle_start_charging() const;
-  void handle_spin_in_place() const;
+  void handle_spin_in_place();
   void handle_stop_speaking_or_moving() const;
   void handle_start_mapping() const;
   void handle_stop_mapping() const;
@@ -59,7 +74,19 @@ private:
   
   rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr cmd_publisher_;
 
+  //回调组
+  rclcpp::CallbackGroup::SharedPtr client_cb_group_;
+  rclcpp::CallbackGroup::SharedPtr timer_cb_group_;
+
   size_t count_;
+
+  //前进后退的速度
+  double speed_ = 0.5;
+
+  //生命周期管理
+  std::string lifecycle_node_ = "/sensor_node";
+  std::shared_ptr<LifecycleServiceClient> lc_manager_;
+  std::shared_ptr<rclcpp::Client<lifecycle_msgs::srv::GetState>> client_get_state_;
 };
 
 #endif // COMMUNICATION_SERVER_H
