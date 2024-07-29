@@ -6996,3 +6996,861 @@ xœ«VJÌ,IÌÉV²ªV*K-R²R2RÒQJ*-	¤Vd¥Æ§$–¤*Yš™Zš››˜ê(¥å%e¦
 [2024/07/24 10:13:01 216] isr_local  2142 esr_session_end, ret =  0  
 [2024/07/24 10:13:01 217] isr_local  2265 last gc at  1721787177  
 [2024/07/24 10:13:01 256] isr_local  638  local engine already stopped! stop cmd ignored  
+============================================================
+Time  2024/07/29 11:07:30 903 
+============================================================
+[2024/07/29 11:07:30 903] isr_local  2168 os_type is:  Linux  
+[2024/07/29 11:07:30 906] isr_local  2177 SYS_MSG_LOAD_LOCAL  
+[2024/07/29 11:07:30 906] isr_local  2206 SYS_MSG_REGCB_LOCAL| param0 =  msp_status_cb  
+[2024/07/29 11:07:30 906] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:07:30 907] isr_local  2206 SYS_MSG_REGCB_LOCAL| param0 =  local_service_cbmsg  
+[2024/07/29 11:07:30 907] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:07:30 907] isr_local  2114 ASR_LOCAL_MSG_SSB  
+[2024/07/29 11:07:30 908] isr_local  1251 esr_session_begin | params:  engine_type=local,asr_res_path=fo|res/asr/common.jet,sample_rate=16000,grm_build_path=res/asr/GrmBuilld,local_grammar=call,result_type=xml,result_encoding=UTF-8,vad_eos=900,asr_denoise=1,vad_enable=1  
+[2024/07/29 11:07:30 908] isr_local  803  engine_type  :  local  
+[2024/07/29 11:07:30 908] isr_local  803  asr_res_path  :  fo|res/asr/common.jet  
+[2024/07/29 11:07:30 908] isr_local  803  sample_rate  :  16000  
+[2024/07/29 11:07:30 908] isr_local  803  grm_build_path  :  res/asr/GrmBuilld  
+[2024/07/29 11:07:30 908] isr_local  803  local_grammar  :  call  
+[2024/07/29 11:07:30 908] isr_local  803  result_type  :  xml  
+[2024/07/29 11:07:30 909] isr_local  803  result_encoding  :  UTF-8  
+[2024/07/29 11:07:30 909] isr_local  803  vad_eos  :  900  
+[2024/07/29 11:07:30 909] isr_local  803  asr_denoise  :  1  
+[2024/07/29 11:07:30 909] isr_local  803  vad_enable  :  1  
+[2024/07/29 11:07:30 909] isr_local  1280 init aitalk in ssb  
+[2024/07/29 11:07:30 910] isr_local  1162 esr_init | params:  engine_type=local,asr_res_path=fo|res/asr/common.jet,sample_rate=16000,grm_build_path=res/asr/GrmBuilld,local_grammar=call,result_type=xml,result_encoding=UTF-8,vad_eos=900,asr_denoise=1,vad_enable=1  
+[2024/07/29 11:07:30 910] isr_local  803  engine_type  :  local  
+[2024/07/29 11:07:30 910] isr_local  803  asr_res_path  :  fo|res/asr/common.jet  
+[2024/07/29 11:07:30 910] isr_local  803  sample_rate  :  16000  
+[2024/07/29 11:07:30 910] isr_local  803  grm_build_path  :  res/asr/GrmBuilld  
+[2024/07/29 11:07:30 910] isr_local  803  local_grammar  :  call  
+[2024/07/29 11:07:30 910] isr_local  803  result_type  :  xml  
+[2024/07/29 11:07:30 910] isr_local  803  result_encoding  :  UTF-8  
+[2024/07/29 11:07:30 910] isr_local  803  vad_eos  :  900  
+[2024/07/29 11:07:30 911] isr_local  803  asr_denoise  :  1  
+[2024/07/29 11:07:30 911] isr_local  803  vad_enable  :  1  
+[2024/07/29 11:07:30 911] isr_local  1083  lucEsr.new   
+[2024/07/29 11:07:30 911] isr_local  1000 file count =   1  
+[2024/07/29 11:07:30 911] isr_local  923  file open type is:   fo  
+[2024/07/29 11:07:30 911] isr_local  956  res/asr/common.jet  0  0  
+[2024/07/29 11:07:30 912] isr_local  1018 speech_plus_setting  0  
+[2024/07/29 11:07:30 912] isr_local  1031 2  nil  res/asr/common.jet  0  0  
+[2024/07/29 11:07:30 914] isr_local  1033 res_ver  2  
+[2024/07/29 11:07:30 914] isr_local  1034 res 5  07628dc3fff61cc19f7b714af039d4eb  
+[2024/07/29 11:07:30 914] isr_local  1035 res_new_old_mark  v5pp  
+[2024/07/29 11:07:30 914] isr_local  1036 res_usr_name  ""  
+[2024/07/29 11:07:30 914] isr_local  1037 res_expires  1725953745  
+[2024/07/29 11:07:30 914] isr_local  1038 err  0  
+[2024/07/29 11:07:30 914] isr_local  1054 lgi appid 5  07628dc3fff61cc19f7b714af039d4eb  
+[2024/07/29 11:07:30 914] isr_local  1069 now expires:  1722222450  1725953745  
+[2024/07/29 11:07:30 916] auth       74   aitalk  app  nil  nil  {"aitalk":{"ver":"2","bus":{"expire_date":1725953745,"forbid":"0","nlimit":10}}}  
+[2024/07/29 11:07:30 917] auth       312  nil  
+[2024/07/29 11:07:31 016] isr_local  1294 authorized_aitalk=  nil  
+[2024/07/29 11:07:31 016] isr_local  1295 forbid_aitalk=  0  
+[2024/07/29 11:07:31 016] auth       570  aitalk  table(54064550) nil  nil  appid = 93f704a1  
+[2024/07/29 11:07:31 016] auth       579  app  nil  nil  nil  
+[2024/07/29 11:07:31 016] auth       636  ath rquest  {"authorize":[{"ver":"2.1.1","busin":"aitalk"}]}  
+[2024/07/29 11:07:31 017] transport  642  paramkvsport is   nil  
+[2024/07/29 11:07:31 017] transport  654  ns_enable=  1  
+[2024/07/29 11:07:31 017] transport  656  2017-08--24 is_ns_need_close =   nil  
+[2024/07/29 11:07:31 017] transport  662  net.nettype=  standard  
+[2024/07/29 11:07:31 018] transport  672  url.full=  nil  
+[2024/07/29 11:07:31 018] transport  673  urltmp=  nil  
+[2024/07/29 11:07:31 018] transport  677  server_url_host=, server_url_port=, server_url_path=  open.xf-yun.com  nil  /msp.do  
+[2024/07/29 11:07:31 018] transport  705  url.full=  nil  
+[2024/07/29 11:07:31 018] transport  890  switch 80  
+[2024/07/29 11:07:31 018] transport  902  net type:  standard  
+[2024/07/29 11:07:31 018] transport  903  net operator:  def  
+[2024/07/29 11:07:31 018] transport  904  use proxy:  false  
+[2024/07/29 11:07:31 018] auth       691  not login!  
+[2024/07/29 11:07:31 018] auth       528  [session] send auth request  
+[2024/07/29 11:07:31 018] transport  1102 session.domain=  open.xf-yun.com  
+[2024/07/29 11:07:31 018] transport  1103 url.host=  open.xf-yun.com  
+[2024/07/29 11:07:31 018] transport  1080 NAMESERVER START  
+[2024/07/29 11:07:31 018] transport  1083 name =   ath  
+[2024/07/29 11:07:31 018] ns         629  ntt=  standard  
+[2024/07/29 11:07:31 018] transport  1086 trans,ns_inprog =  0  
+[2024/07/29 11:07:31 018] ns         585  name server start  
+[2024/07/29 11:07:31 018] ns         586  ns_sub =   ath  
+[2024/07/29 11:07:31 018] ns         588  ns_host=  open.xf-yun.com  
+[2024/07/29 11:07:31 018] ns         479  ns_host=  open.xf-yun.com  
+[2024/07/29 11:07:31 018] ns         558  GET /sip/resolver?srand=0729110711.32 HTTP/1.1
+Host: hdns.openspeech.cn
+Connection: Keep-Alive
+X-Par: ver=1.3&appid=93f704a1&operator=UNKNOW&nettype=STANDARD&cver=5.0.38.1195&svc=ath&host=open.xf-yun.com&sign=67dfe991335645733f1e7de7420923c4
+User-Agent: iFLYCloud
+
+  
+[2024/07/29 11:07:31 018] ns         559  net_type =  standard  
+[2024/07/29 11:07:31 018] ns         560  cmwapascmnet =  
+[2024/07/29 11:07:31 018] ns         561  uniwapasuninet =  
+[2024/07/29 11:07:31 018] ns         562  ctwapasctnet =  
+[2024/07/29 11:07:31 019] ns         579  host=  hdns.openspeech.cn  
+[2024/07/29 11:07:31 019] network    263  gethostbyname  hdns.openspeech.cn  ns1  
+[2024/07/29 11:07:31 019] auth       535  0  
+[2024/07/29 11:07:31 019] auth       498  lver:  nil  
+[2024/07/29 11:07:31 019] auth       503  cfg_ver:  nil  
+[2024/07/29 11:07:31 019] transport  1849 transport_obj.send | in  
+[2024/07/29 11:07:31 019] transport  1855 self.msg_flag_q  table(5407b980) 
+[2024/07/29 11:07:31 019] transport  1856 self.msg_q  table(5404d390) 
+[2024/07/29 11:07:31 019] transport  1788 transport_obj.try2send | in  
+[2024/07/29 11:07:31 019] transport  1789 self.soc  nil  
+[2024/07/29 11:07:31 019] transport  1790 self.connected  false  
+[2024/07/29 11:07:31 019] transport  1791 self.latesterr  0  
+[2024/07/29 11:07:31 019] transport  1862 transport_obj.send | out  
+[2024/07/29 11:07:31 019] isr_local  2038 commit path:   res/asr/GrmBuilld/temp/commit  
+[2024/07/29 11:07:31 027] isr_local  1409 esr_session_begin | esr_obj:start ret =  0  
+[2024/07/29 11:07:31 027] isr_local  2122 esr_session_begin, ret =   0  
+[2024/07/29 11:07:31 028] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:07:31 028] network    245  dns resp  0  ns1  
+[2024/07/29 11:07:31 028] ns         425  ns dns ok  101.200.180.128  
+[2024/07/29 11:07:31 028] ns         205  iplist not avail  
+[2024/07/29 11:07:31 030] ns         432  is_voicecloud_ip=  0  
+[2024/07/29 11:07:31 030] ns         439  ip_is_expected=  true  
+[2024/07/29 11:07:31 030] ns         447  ip_is_expected=  true  
+[2024/07/29 11:07:31 030] network    445  gethttpresp2  101.200.180.128  80  ns2  
+[2024/07/29 11:07:31 030] network    465  prot_type  tcp  
+[2024/07/29 11:07:31 046] transport  191  [dns] [1] response 121.37.244.117  
+[2024/07/29 11:07:31 046] transport  199  121  37  244  117  
+[2024/07/29 11:07:31 047] transport  201  ipv =  v4  
+[2024/07/29 11:07:31 047] transport  205  dns ip is v4  
+[2024/07/29 11:07:31 047] transport  127  iplist not avail  
+[2024/07/29 11:07:31 048] transport  244  no iplist now  
+[2024/07/29 11:07:31 048] network    95   iptoenv ,  ipcache  open.xf-yun.com  def  121.37.244.117  
+[2024/07/29 11:07:31 051] transport  288  dns cb start conn  
+[2024/07/29 11:07:31 051] transport  1298 [soc] connect   121.37.244.117  80  
+[2024/07/29 11:07:31 051] transport  1310 mspsoc.open,prot_type=  tcp  
+[2024/07/29 11:07:31 060] network    350  connected  ns2  
+[2024/07/29 11:07:31 062] network    353  send ok  271  ns2  
+[2024/07/29 11:07:31 095] transport  470  [soc] [1] connected  
+[2024/07/29 11:07:31 097] transport  1788 transport_obj.try2send | in  
+[2024/07/29 11:07:31 098] transport  1789 self.soc  udata(5410c418) 
+[2024/07/29 11:07:31 098] transport  1790 self.connected  true  
+[2024/07/29 11:07:31 098] transport  1791 self.latesterr  0  
+[2024/07/29 11:07:31 098] transport  1808 transport:try2send,#msg_q=  1  
+[2024/07/29 11:07:31 098] transport  1353 build http request.  
+[2024/07/29 11:07:31 098] transport  1466 POST /msp.do HTTP/1.1
+Host: open.xf-yun.com
+Content-Type: multipart/mixed;boundary=--
+Content-Length: 364
+User-Agent: iFLYCloud
+Cache-Control: no-cache
+Accept: */*
+
+----
+CL:51
+CT:text/plain
+
+ver=MSSP+0%2E9&sub=auth&cmd=rath&key=08K7qqwYsDU/w=
+----
+CL:48
+CT:text/appinfo
+CE:gzip
+
+36
+xœËN­´5415³0·0O²L327´´LµLM¶45HL4HL353M  
+[2024/07/29 11:07:31 099] transport  1808 transport:try2send,#msg_q=  0  
+[2024/07/29 11:07:31 099] network    362  readable  ns2  
+[2024/07/29 11:07:31 099] network    366  HTTP/1.1 200 OK
+Server: iflytek/hdns
+Date: Mon, 29 Jul 2024 03:07:30 GMT
+Content-Type: application/json
+Content-Length: 314
+Connection: close
+
+{"dns":[{"host":"open.xf-yun.com","sip":[{"svc":"ath","ips":[{"ip":"114.118.65.76","port":80,"idc":"jxq"},{"ip":"114.118.65.92","port":80,"idc":"jxq"}],"ttl":6000,"compel":0}]}],"default":[{"host":"open.xf-yun.com","sip":[{"svc":"ath","ips":[{"ip":"114.118.65.92","port":80,"idc":"jxq"}],"ttl":6000,"compel":0}]}]}  
+[2024/07/29 11:07:31 100] ns         256  name server http resp  table(540366f0) 0  udata(540295b8) 
+[2024/07/29 11:07:31 100] ns         269  ns response OK for this time!  
+[2024/07/29 11:07:31 101] ns         280  from_server=  iflytek/hdns  
+[2024/07/29 11:07:31 102] ns         363  compel :  0  
+[2024/07/29 11:07:31 103] ns         374  tick()=  7685429  
+[2024/07/29 11:07:31 103] ns         378  tick()mod=  7685429  
+[2024/07/29 11:07:31 103] ns         379  ns_host=  open.xf-yun.com  
+[2024/07/29 11:07:31 105] ns         392  ns_host=  open.xf-yun.com  
+[2024/07/29 11:07:31 106] transport  1060 ns_ip =   114.118.65.76  
+[2024/07/29 11:07:31 106] transport  1061 ip_type =  assigned_athopen.xf-yun.com_host  
+[2024/07/29 11:07:31 106] ns         658  no data in ns_q  
+[2024/07/29 11:07:31 106] ns         659  conti_ns,ns_inprog =   1  
+[2024/07/29 11:07:31 106] transport  479  [soc] [1] send ok  537  
+[2024/07/29 11:07:31 106] transport  1788 transport_obj.try2send | in  
+[2024/07/29 11:07:31 106] transport  1789 self.soc  udata(5410c418) 
+[2024/07/29 11:07:31 106] transport  1790 self.connected  true  
+[2024/07/29 11:07:31 106] transport  1791 self.latesterr  0  
+[2024/07/29 11:07:31 106] transport  1808 transport:try2send,#msg_q=  0  
+[2024/07/29 11:07:31 106] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:07:31 106] isr_local  601  audio buffered :   udata(541165c8) 1  
+[2024/07/29 11:07:31 106] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:07:31 120] isr_local  655  local engine ready  
+[2024/07/29 11:07:31 120] isr_local  585  esr_flush_buf_audio buffer audio num:  1  
+[2024/07/29 11:07:31 120] isr_local  1558 auwl =   3200  
+[2024/07/29 11:07:31 120] isr_local  590  esr_audio_write, ret =  0  
+[2024/07/29 11:07:31 120] isr_local  630  local engine started  
+[2024/07/29 11:07:31 149] transport  491  [soc] [1] readable  
+[2024/07/29 11:07:31 149] transport  1756 HTTP/1.1 200 OK
+Content-Type: multipart/mixed;boundary=--
+Content-Length: 287
+X-Req-Date: 2024/07/29 11:07:31 78
+Cache-Control: no-cache
+CL: 287
+X-Res-Date: 2024/07/29 11:07:31 92
+
+----
+Content-Length:83
+
+ver=MSSP+0%2E9&ret=0&key=09jhlOR4gqluzDq5Z6dgfa5qKDlBRNs2agUtUMN/DyuMzoOHjiUFlg1g==
+----
+Content-Length:87
+Content-Type:binary/authinfo
+Content-Encoding:gzip
+
+80
+xœ«VJÌ,IÌÉV²ªV*K-R²R2RÒQJ*-	¤Vd¥Æ§$–¤*Yš™Zš››˜ê(¥å%e¦  
+[2024/07/29 11:07:31 149] transport  1484 a_complete_httpmessage  200  
+[2024/07/29 11:07:31 149] transport  1594 is_update  true  
+[2024/07/29 11:07:31 149] transport  1598 port updated  80  
+[2024/07/29 11:07:31 149] transport  1600 switch  80  
+[2024/07/29 11:07:31 149] auth       347  [trans] [id = table: 0xffff54064690;;;=0===;auth] readable  
+[2024/07/29 11:07:31 151] network    90   ipfromenv ,  ipcache  open.xf-yun.com  def  121.37.244.117  
+[2024/07/29 11:07:31 151] transport  976  cached ip is confirmed  
+[2024/07/29 11:07:31 152] transport  1326 [soc] disconnect   
+[2024/07/29 11:07:31 152] transport  986  transport clean  
+[2024/07/29 11:07:31 152] auth       383  auth_json=  udata(5410a098) 
+[2024/07/29 11:07:31 153] auth       384  tostring(auth_json)=  {"aitalk":{"ver":"2","bus":{"expire_date":1725953745,"forbid":"0","nlimit":10}}}  
+[2024/07/29 11:07:31 153] auth       74   aitalk  app  nil  nil  {"aitalk":{"ver":"2","bus":{"expire_date":1725953745,"forbid":"0","nlimit":10}}}  
+[2024/07/29 11:07:31 155] auth       404  auth ok!  
+[2024/07/29 11:07:31 196] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:07:31 196] isr_local  1558 auwl =   3200  
+[2024/07/29 11:07:31 197] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:07:31 197] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:07:31 296] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:07:31 296] isr_local  1558 auwl =   3200  
+[2024/07/29 11:07:31 296] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:07:31 296] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:07:31 396] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:07:31 396] isr_local  1558 auwl =   3200  
+[2024/07/29 11:07:31 396] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:07:31 396] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:07:31 496] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:07:31 496] isr_local  1558 auwl =   3200  
+[2024/07/29 11:07:31 496] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:07:31 496] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:07:31 596] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:07:31 596] isr_local  1558 auwl =   3200  
+[2024/07/29 11:07:31 596] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:07:31 596] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:07:31 697] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:07:31 697] isr_local  1558 auwl =   3200  
+[2024/07/29 11:07:31 697] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:07:31 697] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:07:31 796] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:07:31 796] isr_local  1558 auwl =   3200  
+[2024/07/29 11:07:31 797] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:07:31 797] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:07:31 897] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:07:31 897] isr_local  1558 auwl =   3200  
+[2024/07/29 11:07:31 897] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:07:31 897] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:07:31 997] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:07:31 997] isr_local  1558 auwl =   3200  
+[2024/07/29 11:07:31 997] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:07:31 997] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:07:32 098] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:07:32 098] isr_local  1558 auwl =   3200  
+[2024/07/29 11:07:32 099] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:07:32 099] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:07:32 198] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:07:32 198] isr_local  1558 auwl =   3200  
+[2024/07/29 11:07:32 198] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:07:32 198] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:07:32 296] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:07:32 297] isr_local  1558 auwl =   3200  
+[2024/07/29 11:07:32 297] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:07:32 297] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:07:32 397] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:07:32 397] isr_local  1558 auwl =   3200  
+[2024/07/29 11:07:32 397] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:07:32 397] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:07:32 497] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:07:32 498] isr_local  1558 auwl =   3200  
+[2024/07/29 11:07:32 498] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:07:32 498] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:07:32 597] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:07:32 597] isr_local  1558 auwl =   3200  
+[2024/07/29 11:07:32 597] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:07:32 597] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:07:32 697] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:07:32 697] isr_local  1558 auwl =   3200  
+[2024/07/29 11:07:32 697] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:07:32 697] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:07:32 797] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:07:32 797] isr_local  1558 auwl =   3200  
+[2024/07/29 11:07:32 797] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:07:32 797] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:07:32 897] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:07:32 897] isr_local  1558 auwl =   3200  
+[2024/07/29 11:07:32 897] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:07:32 898] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:07:32 998] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:07:32 998] isr_local  1558 auwl =   3200  
+[2024/07/29 11:07:32 999] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:07:32 999] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:07:33 098] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:07:33 098] isr_local  1558 auwl =   3200  
+[2024/07/29 11:07:33 098] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:07:33 099] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:07:33 197] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:07:33 197] isr_local  1558 auwl =   3200  
+[2024/07/29 11:07:33 198] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:07:33 198] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:07:33 296] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:07:33 296] isr_local  1558 auwl =   3200  
+[2024/07/29 11:07:33 296] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:07:33 296] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:07:33 397] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:07:33 397] isr_local  1558 auwl =   3200  
+[2024/07/29 11:07:33 397] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:07:33 397] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:07:33 496] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:07:33 496] isr_local  1558 auwl =   3200  
+[2024/07/29 11:07:33 496] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:07:33 496] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:07:33 596] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:07:33 596] isr_local  1558 auwl =   3200  
+[2024/07/29 11:07:33 596] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:07:33 596] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:07:33 698] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:07:33 698] isr_local  1558 auwl =   3200  
+[2024/07/29 11:07:33 698] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:07:33 699] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:07:33 798] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:07:33 799] isr_local  1558 auwl =   3200  
+[2024/07/29 11:07:33 799] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:07:33 799] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:07:33 897] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:07:33 897] isr_local  1558 auwl =   3200  
+[2024/07/29 11:07:33 897] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:07:33 897] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:07:33 997] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:07:33 997] isr_local  1558 auwl =   3200  
+[2024/07/29 11:07:33 997] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:07:33 997] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:07:34 097] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:07:34 097] isr_local  1558 auwl =   3200  
+[2024/07/29 11:07:34 097] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:07:34 098] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:07:34 197] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:07:34 197] isr_local  1558 auwl =   3200  
+[2024/07/29 11:07:34 197] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:07:34 197] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:07:34 297] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:07:34 297] isr_local  1558 auwl =   3200  
+[2024/07/29 11:07:34 297] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:07:34 297] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:07:34 396] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:07:34 396] isr_local  1558 auwl =   3200  
+[2024/07/29 11:07:34 396] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:07:34 396] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:07:34 496] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:07:34 496] isr_local  1558 auwl =   3200  
+[2024/07/29 11:07:34 496] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:07:34 496] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:07:34 597] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:07:34 597] isr_local  1558 auwl =   2880  
+[2024/07/29 11:07:34 597] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:07:34 597] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:07:34 639] isr_local  669  final result will throw out next!  
+[2024/07/29 11:07:34 639] isr_local  679  nRecognizeState:  1  
+[2024/07/29 11:07:34 639] isr_local  680  nConfidenceScore:  0  
+[2024/07/29 11:07:34 639] isr_local  728  result_type :   xml  
+[2024/07/29 11:07:34 639] isr_local  729  result_encoding :   UTF-8  
+[2024/07/29 11:07:34 639] isr_local  730  is iat :   false  
+[2024/07/29 11:07:34 640] isr_local  469  item_count:1  
+[2024/07/29 11:07:34 640] isr_local  469  item_count:1  
+[2024/07/29 11:07:34 641] isr_local  293  nil  
+[2024/07/29 11:07:34 641] isr_local  675  recognized end!  
+[2024/07/29 11:07:34 800] isr_local  2140 ASR_LOCAL_MSG_SSE  
+[2024/07/29 11:07:34 800] isr_local  1518 esr_session_end | esr_obj:stop ret =  0  
+[2024/07/29 11:07:34 800] isr_local  2142 esr_session_end, ret =  0  
+[2024/07/29 11:07:34 802] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:07:34 839] isr_local  638  local engine already stopped! stop cmd ignored  
+[2024/07/29 11:17:44 866] isr_local  2206 SYS_MSG_REGCB_LOCAL| param0 =  local_service_cbmsg  
+[2024/07/29 11:17:44 866] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:17:44 866] isr_local  2114 ASR_LOCAL_MSG_SSB  
+[2024/07/29 11:17:44 866] isr_local  1251 esr_session_begin | params:  engine_type=local,asr_res_path=fo|res/asr/common.jet,sample_rate=16000,grm_build_path=res/asr/GrmBuilld,local_grammar=call,result_type=xml,result_encoding=UTF-8,vad_eos=900,asr_denoise=1,vad_enable=1  
+[2024/07/29 11:17:44 866] isr_local  803  engine_type  :  local  
+[2024/07/29 11:17:44 866] isr_local  803  asr_res_path  :  fo|res/asr/common.jet  
+[2024/07/29 11:17:44 867] isr_local  803  sample_rate  :  16000  
+[2024/07/29 11:17:44 867] isr_local  803  grm_build_path  :  res/asr/GrmBuilld  
+[2024/07/29 11:17:44 867] isr_local  803  local_grammar  :  call  
+[2024/07/29 11:17:44 867] isr_local  803  result_type  :  xml  
+[2024/07/29 11:17:44 867] isr_local  803  result_encoding  :  UTF-8  
+[2024/07/29 11:17:44 867] isr_local  803  vad_eos  :  900  
+[2024/07/29 11:17:44 867] isr_local  803  asr_denoise  :  1  
+[2024/07/29 11:17:44 867] isr_local  803  vad_enable  :  1  
+[2024/07/29 11:17:44 867] isr_local  1294 authorized_aitalk=  1  
+[2024/07/29 11:17:44 867] isr_local  1295 forbid_aitalk=  0  
+[2024/07/29 11:17:44 867] isr_local  2038 commit path:   res/asr/GrmBuilld/temp/commit  
+[2024/07/29 11:17:44 867] isr_local  1409 esr_session_begin | esr_obj:start ret =  0  
+[2024/07/29 11:17:44 867] isr_local  2122 esr_session_begin, ret =   0  
+[2024/07/29 11:17:44 867] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:17:44 968] isr_local  655  local engine ready  
+[2024/07/29 11:17:44 968] isr_local  585  esr_flush_buf_audio buffer audio num:  0  
+[2024/07/29 11:17:44 969] isr_local  630  local engine started  
+[2024/07/29 11:17:45 068] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:17:45 068] isr_local  1558 auwl =   3200  
+[2024/07/29 11:17:45 069] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:17:45 069] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:17:45 168] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:17:45 169] isr_local  1558 auwl =   3200  
+[2024/07/29 11:17:45 169] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:17:45 169] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:17:45 269] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:17:45 269] isr_local  1558 auwl =   3200  
+[2024/07/29 11:17:45 269] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:17:45 269] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:17:45 369] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:17:45 369] isr_local  1558 auwl =   3200  
+[2024/07/29 11:17:45 369] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:17:45 369] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:17:45 469] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:17:45 469] isr_local  1558 auwl =   3200  
+[2024/07/29 11:17:45 469] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:17:45 469] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:17:45 569] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:17:45 569] isr_local  1558 auwl =   3200  
+[2024/07/29 11:17:45 569] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:17:45 569] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:17:45 669] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:17:45 669] isr_local  1558 auwl =   3200  
+[2024/07/29 11:17:45 669] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:17:45 669] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:17:45 769] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:17:45 769] isr_local  1558 auwl =   3200  
+[2024/07/29 11:17:45 769] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:17:45 769] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:17:45 869] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:17:45 869] isr_local  1558 auwl =   3200  
+[2024/07/29 11:17:45 869] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:17:45 869] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:17:45 970] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:17:45 970] isr_local  1558 auwl =   3200  
+[2024/07/29 11:17:45 970] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:17:45 971] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:17:46 070] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:17:46 070] isr_local  1558 auwl =   3200  
+[2024/07/29 11:17:46 070] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:17:46 070] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:17:46 170] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:17:46 170] isr_local  1558 auwl =   3200  
+[2024/07/29 11:17:46 171] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:17:46 171] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:17:46 270] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:17:46 270] isr_local  1558 auwl =   3200  
+[2024/07/29 11:17:46 270] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:17:46 270] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:17:46 371] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:17:46 371] isr_local  1558 auwl =   3200  
+[2024/07/29 11:17:46 371] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:17:46 371] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:17:46 472] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:17:46 472] isr_local  1558 auwl =   3200  
+[2024/07/29 11:17:46 473] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:17:46 473] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:17:46 571] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:17:46 572] isr_local  1558 auwl =   3200  
+[2024/07/29 11:17:46 572] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:17:46 572] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:17:46 670] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:17:46 670] isr_local  1558 auwl =   3200  
+[2024/07/29 11:17:46 671] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:17:46 671] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:17:46 769] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:17:46 769] isr_local  1558 auwl =   3200  
+[2024/07/29 11:17:46 769] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:17:46 769] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:17:46 870] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:17:46 870] isr_local  1558 auwl =   3200  
+[2024/07/29 11:17:46 870] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:17:46 870] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:17:46 970] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:17:46 971] isr_local  1558 auwl =   3200  
+[2024/07/29 11:17:46 971] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:17:46 971] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:17:47 072] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:17:47 072] isr_local  1558 auwl =   3200  
+[2024/07/29 11:17:47 072] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:17:47 072] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:17:47 171] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:17:47 171] isr_local  1558 auwl =   3200  
+[2024/07/29 11:17:47 171] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:17:47 172] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:17:47 270] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:17:47 270] isr_local  1558 auwl =   3200  
+[2024/07/29 11:17:47 270] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:17:47 271] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:17:47 370] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:17:47 370] isr_local  1558 auwl =   3200  
+[2024/07/29 11:17:47 370] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:17:47 370] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:17:47 471] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:17:47 471] isr_local  1558 auwl =   3200  
+[2024/07/29 11:17:47 471] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:17:47 471] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:17:47 570] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:17:47 570] isr_local  1558 auwl =   3200  
+[2024/07/29 11:17:47 571] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:17:47 571] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:17:47 670] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:17:47 670] isr_local  1558 auwl =   3200  
+[2024/07/29 11:17:47 670] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:17:47 670] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:17:47 772] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:17:47 772] isr_local  1558 auwl =   3200  
+[2024/07/29 11:17:47 772] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:17:47 772] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:17:47 871] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:17:47 871] isr_local  1558 auwl =   3200  
+[2024/07/29 11:17:47 871] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:17:47 871] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:17:47 971] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:17:47 972] isr_local  1558 auwl =   3200  
+[2024/07/29 11:17:47 972] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:17:47 972] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:17:48 071] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:17:48 071] isr_local  1558 auwl =   3200  
+[2024/07/29 11:17:48 071] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:17:48 071] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:17:48 072] isr_local  675  recognized end!  
+[2024/07/29 11:17:48 170] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:17:48 170] isr_local  1558 auwl =   3200  
+[2024/07/29 11:17:48 171] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:17:48 171] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:17:48 271] isr_local  2140 ASR_LOCAL_MSG_SSE  
+[2024/07/29 11:17:48 271] isr_local  1518 esr_session_end | esr_obj:stop ret =  0  
+[2024/07/29 11:17:48 272] isr_local  2142 esr_session_end, ret =  0  
+[2024/07/29 11:17:48 279] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:17:48 279] isr_local  638  local engine already stopped! stop cmd ignored  
+[2024/07/29 11:18:50 362] isr_local  2206 SYS_MSG_REGCB_LOCAL| param0 =  local_service_cbmsg  
+[2024/07/29 11:18:50 362] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:18:50 363] isr_local  2114 ASR_LOCAL_MSG_SSB  
+[2024/07/29 11:18:50 363] isr_local  1251 esr_session_begin | params:  engine_type=local,asr_res_path=fo|res/asr/common.jet,sample_rate=16000,grm_build_path=res/asr/GrmBuilld,local_grammar=call,result_type=xml,result_encoding=UTF-8,vad_eos=900,asr_denoise=1,vad_enable=1  
+[2024/07/29 11:18:50 363] isr_local  803  engine_type  :  local  
+[2024/07/29 11:18:50 363] isr_local  803  asr_res_path  :  fo|res/asr/common.jet  
+[2024/07/29 11:18:50 363] isr_local  803  sample_rate  :  16000  
+[2024/07/29 11:18:50 363] isr_local  803  grm_build_path  :  res/asr/GrmBuilld  
+[2024/07/29 11:18:50 364] isr_local  803  local_grammar  :  call  
+[2024/07/29 11:18:50 364] isr_local  803  result_type  :  xml  
+[2024/07/29 11:18:50 364] isr_local  803  result_encoding  :  UTF-8  
+[2024/07/29 11:18:50 364] isr_local  803  vad_eos  :  900  
+[2024/07/29 11:18:50 364] isr_local  803  asr_denoise  :  1  
+[2024/07/29 11:18:50 364] isr_local  803  vad_enable  :  1  
+[2024/07/29 11:18:50 364] isr_local  1294 authorized_aitalk=  1  
+[2024/07/29 11:18:50 364] isr_local  1295 forbid_aitalk=  0  
+[2024/07/29 11:18:50 365] isr_local  2038 commit path:   res/asr/GrmBuilld/temp/commit  
+[2024/07/29 11:18:50 366] isr_local  1409 esr_session_begin | esr_obj:start ret =  0  
+[2024/07/29 11:18:50 366] isr_local  2122 esr_session_begin, ret =   0  
+[2024/07/29 11:18:50 367] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:18:50 367] isr_local  655  local engine ready  
+[2024/07/29 11:18:50 368] isr_local  585  esr_flush_buf_audio buffer audio num:  0  
+[2024/07/29 11:18:50 368] isr_local  630  local engine started  
+[2024/07/29 11:18:50 567] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:18:50 567] isr_local  1558 auwl =   3200  
+[2024/07/29 11:18:50 568] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:18:50 568] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:18:50 666] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:18:50 666] isr_local  1558 auwl =   3200  
+[2024/07/29 11:18:50 667] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:18:50 667] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:18:50 766] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:18:50 766] isr_local  1558 auwl =   3200  
+[2024/07/29 11:18:50 766] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:18:50 766] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:18:50 869] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:18:50 869] isr_local  1558 auwl =   3200  
+[2024/07/29 11:18:50 869] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:18:50 869] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:18:50 969] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:18:50 969] isr_local  1558 auwl =   3200  
+[2024/07/29 11:18:50 969] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:18:50 969] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:18:51 066] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:18:51 066] isr_local  1558 auwl =   3200  
+[2024/07/29 11:18:51 066] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:18:51 066] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:18:51 166] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:18:51 166] isr_local  1558 auwl =   3200  
+[2024/07/29 11:18:51 166] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:18:51 167] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:18:51 266] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:18:51 266] isr_local  1558 auwl =   3200  
+[2024/07/29 11:18:51 266] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:18:51 267] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:18:51 368] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:18:51 368] isr_local  1558 auwl =   3200  
+[2024/07/29 11:18:51 368] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:18:51 368] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:18:51 467] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:18:51 467] isr_local  1558 auwl =   3200  
+[2024/07/29 11:18:51 467] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:18:51 468] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:18:51 568] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:18:51 568] isr_local  1558 auwl =   3200  
+[2024/07/29 11:18:51 569] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:18:51 569] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:18:51 667] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:18:51 667] isr_local  1558 auwl =   3200  
+[2024/07/29 11:18:51 668] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:18:51 668] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:18:51 767] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:18:51 767] isr_local  1558 auwl =   3200  
+[2024/07/29 11:18:51 767] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:18:51 767] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:18:51 866] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:18:51 867] isr_local  1558 auwl =   3200  
+[2024/07/29 11:18:51 867] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:18:51 867] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:18:51 967] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:18:51 968] isr_local  1558 auwl =   3200  
+[2024/07/29 11:18:51 968] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:18:51 968] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:18:52 067] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:18:52 067] isr_local  1558 auwl =   3200  
+[2024/07/29 11:18:52 067] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:18:52 067] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:18:52 166] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:18:52 166] isr_local  1558 auwl =   3200  
+[2024/07/29 11:18:52 166] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:18:52 166] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:18:52 267] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:18:52 267] isr_local  1558 auwl =   3200  
+[2024/07/29 11:18:52 267] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:18:52 268] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:18:52 366] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:18:52 366] isr_local  1558 auwl =   3200  
+[2024/07/29 11:18:52 366] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:18:52 367] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:18:52 467] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:18:52 467] isr_local  1558 auwl =   3200  
+[2024/07/29 11:18:52 467] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:18:52 468] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:18:52 567] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:18:52 567] isr_local  1558 auwl =   3200  
+[2024/07/29 11:18:52 568] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:18:52 568] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:18:52 667] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:18:52 667] isr_local  1558 auwl =   3200  
+[2024/07/29 11:18:52 668] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:18:52 668] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:18:52 766] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:18:52 766] isr_local  1558 auwl =   3200  
+[2024/07/29 11:18:52 767] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:18:52 767] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:18:52 867] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:18:52 867] isr_local  1558 auwl =   3200  
+[2024/07/29 11:18:52 867] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:18:52 868] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:18:52 968] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:18:52 968] isr_local  1558 auwl =   3200  
+[2024/07/29 11:18:52 968] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:18:52 968] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:18:53 067] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:18:53 067] isr_local  1558 auwl =   3200  
+[2024/07/29 11:18:53 068] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:18:53 068] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:18:53 166] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:18:53 166] isr_local  1558 auwl =   3200  
+[2024/07/29 11:18:53 166] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:18:53 166] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:18:53 266] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:18:53 266] isr_local  1558 auwl =   3200  
+[2024/07/29 11:18:53 266] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:18:53 267] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:18:53 366] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:18:53 366] isr_local  1558 auwl =   3200  
+[2024/07/29 11:18:53 366] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:18:53 367] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:18:53 466] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:18:53 467] isr_local  1558 auwl =   3200  
+[2024/07/29 11:18:53 467] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:18:53 467] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:18:53 568] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:18:53 569] isr_local  1558 auwl =   3200  
+[2024/07/29 11:18:53 569] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:18:53 569] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:18:53 570] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:18:53 570] isr_local  1558 auwl =   1600  
+[2024/07/29 11:18:53 570] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:18:53 571] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:18:53 606] isr_local  669  final result will throw out next!  
+[2024/07/29 11:18:53 607] isr_local  679  nRecognizeState:  1  
+[2024/07/29 11:18:53 607] isr_local  680  nConfidenceScore:  0  
+[2024/07/29 11:18:53 607] isr_local  728  result_type :   xml  
+[2024/07/29 11:18:53 607] isr_local  729  result_encoding :   UTF-8  
+[2024/07/29 11:18:53 607] isr_local  730  is iat :   true  
+[2024/07/29 11:18:53 607] isr_local  771  no recognized result!  
+[2024/07/29 11:18:53 608] isr_local  675  recognized end!  
+[2024/07/29 11:18:53 768] isr_local  2140 ASR_LOCAL_MSG_SSE  
+[2024/07/29 11:18:53 769] isr_local  1518 esr_session_end | esr_obj:stop ret =  0  
+[2024/07/29 11:18:53 769] isr_local  2142 esr_session_end, ret =  0  
+[2024/07/29 11:18:53 776] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:18:53 807] isr_local  638  local engine already stopped! stop cmd ignored  
+[2024/07/29 11:21:25 508] isr_local  2206 SYS_MSG_REGCB_LOCAL| param0 =  local_service_cbmsg  
+[2024/07/29 11:21:25 508] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:21:25 508] isr_local  2114 ASR_LOCAL_MSG_SSB  
+[2024/07/29 11:21:25 508] isr_local  1251 esr_session_begin | params:  engine_type=local,asr_res_path=fo|res/asr/common.jet,sample_rate=16000,grm_build_path=res/asr/GrmBuilld,local_grammar=call,result_type=xml,result_encoding=UTF-8,vad_eos=900,asr_denoise=1,vad_enable=1  
+[2024/07/29 11:21:25 509] isr_local  803  engine_type  :  local  
+[2024/07/29 11:21:25 509] isr_local  803  asr_res_path  :  fo|res/asr/common.jet  
+[2024/07/29 11:21:25 509] isr_local  803  sample_rate  :  16000  
+[2024/07/29 11:21:25 509] isr_local  803  grm_build_path  :  res/asr/GrmBuilld  
+[2024/07/29 11:21:25 509] isr_local  803  local_grammar  :  call  
+[2024/07/29 11:21:25 509] isr_local  803  result_type  :  xml  
+[2024/07/29 11:21:25 509] isr_local  803  result_encoding  :  UTF-8  
+[2024/07/29 11:21:25 510] isr_local  803  vad_eos  :  900  
+[2024/07/29 11:21:25 510] isr_local  803  asr_denoise  :  1  
+[2024/07/29 11:21:25 510] isr_local  803  vad_enable  :  1  
+[2024/07/29 11:21:25 510] isr_local  1294 authorized_aitalk=  1  
+[2024/07/29 11:21:25 510] isr_local  1295 forbid_aitalk=  0  
+[2024/07/29 11:21:25 511] isr_local  2038 commit path:   res/asr/GrmBuilld/temp/commit  
+[2024/07/29 11:21:25 511] isr_local  1409 esr_session_begin | esr_obj:start ret =  0  
+[2024/07/29 11:21:25 511] isr_local  2122 esr_session_begin, ret =   0  
+[2024/07/29 11:21:25 512] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:21:25 612] isr_local  655  local engine ready  
+[2024/07/29 11:21:25 612] isr_local  585  esr_flush_buf_audio buffer audio num:  0  
+[2024/07/29 11:21:25 612] isr_local  630  local engine started  
+[2024/07/29 11:21:25 713] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:21:25 714] isr_local  1558 auwl =   3200  
+[2024/07/29 11:21:25 714] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:21:25 714] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:21:25 814] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:21:25 814] isr_local  1558 auwl =   3200  
+[2024/07/29 11:21:25 814] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:21:25 814] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:21:25 912] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:21:25 912] isr_local  1558 auwl =   3200  
+[2024/07/29 11:21:25 913] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:21:25 913] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:21:26 012] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:21:26 012] isr_local  1558 auwl =   3200  
+[2024/07/29 11:21:26 012] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:21:26 012] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:21:26 112] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:21:26 112] isr_local  1558 auwl =   3200  
+[2024/07/29 11:21:26 113] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:21:26 113] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:21:26 212] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:21:26 212] isr_local  1558 auwl =   3200  
+[2024/07/29 11:21:26 213] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:21:26 213] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:21:26 312] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:21:26 312] isr_local  1558 auwl =   3200  
+[2024/07/29 11:21:26 313] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:21:26 313] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:21:26 413] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:21:26 414] isr_local  1558 auwl =   3200  
+[2024/07/29 11:21:26 414] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:21:26 414] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:21:26 512] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:21:26 512] isr_local  1558 auwl =   3200  
+[2024/07/29 11:21:26 512] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:21:26 512] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:21:26 612] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:21:26 613] isr_local  1558 auwl =   3200  
+[2024/07/29 11:21:26 613] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:21:26 613] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:21:26 712] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:21:26 712] isr_local  1558 auwl =   3200  
+[2024/07/29 11:21:26 712] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:21:26 713] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:21:26 812] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:21:26 812] isr_local  1558 auwl =   3200  
+[2024/07/29 11:21:26 813] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:21:26 813] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:21:26 912] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:21:26 912] isr_local  1558 auwl =   3200  
+[2024/07/29 11:21:26 912] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:21:26 912] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:21:27 013] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:21:27 014] isr_local  1558 auwl =   3200  
+[2024/07/29 11:21:27 014] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:21:27 014] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:21:27 114] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:21:27 114] isr_local  1558 auwl =   3200  
+[2024/07/29 11:21:27 114] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:21:27 114] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:21:27 214] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:21:27 214] isr_local  1558 auwl =   3200  
+[2024/07/29 11:21:27 214] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:21:27 214] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:21:27 312] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:21:27 313] isr_local  1558 auwl =   3200  
+[2024/07/29 11:21:27 313] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:21:27 313] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:21:27 412] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:21:27 412] isr_local  1558 auwl =   3200  
+[2024/07/29 11:21:27 413] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:21:27 413] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:21:27 512] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:21:27 513] isr_local  1558 auwl =   3200  
+[2024/07/29 11:21:27 513] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:21:27 513] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:21:27 613] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:21:27 613] isr_local  1558 auwl =   3200  
+[2024/07/29 11:21:27 613] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:21:27 613] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:21:27 711] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:21:27 711] isr_local  1558 auwl =   3200  
+[2024/07/29 11:21:27 712] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:21:27 712] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:21:27 814] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:21:27 814] isr_local  1558 auwl =   3200  
+[2024/07/29 11:21:27 814] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:21:27 814] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:21:27 912] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:21:27 913] isr_local  1558 auwl =   3200  
+[2024/07/29 11:21:27 913] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:21:27 913] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:21:28 013] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:21:28 014] isr_local  1558 auwl =   3200  
+[2024/07/29 11:21:28 014] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:21:28 014] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:21:28 112] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:21:28 112] isr_local  1558 auwl =   3200  
+[2024/07/29 11:21:28 113] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:21:28 113] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:21:28 212] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:21:28 212] isr_local  1558 auwl =   3200  
+[2024/07/29 11:21:28 212] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:21:28 212] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:21:28 312] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:21:28 312] isr_local  1558 auwl =   3200  
+[2024/07/29 11:21:28 312] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:21:28 312] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:21:28 412] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:21:28 412] isr_local  1558 auwl =   3200  
+[2024/07/29 11:21:28 412] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:21:28 412] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:21:28 512] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:21:28 512] isr_local  1558 auwl =   3200  
+[2024/07/29 11:21:28 512] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:21:28 512] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:21:28 613] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:21:28 613] isr_local  1558 auwl =   3200  
+[2024/07/29 11:21:28 614] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:21:28 614] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:21:28 614] isr_local  2126 ASR_LOCAL_MSG_AUW  
+[2024/07/29 11:21:28 615] isr_local  1558 auwl =   640  
+[2024/07/29 11:21:28 615] isr_local  2135 esr_audio_write, ret =  nil  
+[2024/07/29 11:21:28 615] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:21:28 651] isr_local  669  final result will throw out next!  
+[2024/07/29 11:21:28 651] isr_local  679  nRecognizeState:  1  
+[2024/07/29 11:21:28 652] isr_local  680  nConfidenceScore:  0  
+[2024/07/29 11:21:28 652] isr_local  728  result_type :   xml  
+[2024/07/29 11:21:28 652] isr_local  729  result_encoding :   UTF-8  
+[2024/07/29 11:21:28 652] isr_local  730  is iat :   true  
+[2024/07/29 11:21:28 652] isr_local  771  no recognized result!  
+[2024/07/29 11:21:28 653] isr_local  675  recognized end!  
+[2024/07/29 11:21:28 816] isr_local  2140 ASR_LOCAL_MSG_SSE  
+[2024/07/29 11:21:28 817] isr_local  1518 esr_session_end | esr_obj:stop ret =  0  
+[2024/07/29 11:21:28 817] isr_local  2142 esr_session_end, ret =  0  
+[2024/07/29 11:21:28 822] isr_local  2265 last gc at  1722222450  
+[2024/07/29 11:21:28 851] isr_local  638  local engine already stopped! stop cmd ignored  

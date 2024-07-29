@@ -14,8 +14,10 @@ CommunicationServer::CommunicationServer()
   command_sub_ = this->create_subscription<interfaces::msg::Command>(
     "command", 10, std::bind(&CommunicationServer::command_callback, this, _1),options);
   
-   cmd_publisher_ = this->create_publisher<geometry_msgs::msg::Twist>(
-    "/cmd_vel_unstamped", 10);
+  //直接命令发送
+  cmd_publisher_ = this->create_publisher<geometry_msgs::msg::Twist>(
+    "/diffbot_base_controller/cmd_vel_unstamped", 10);
+  nav_publisher_ = this->create_publisher<geometry_msgs::msg::PoseStamped>("goal_pose", 10);
     
   //生命周期
   client_get_state_ = this->create_client<lifecycle_msgs::srv::GetState>(
@@ -53,7 +55,7 @@ void CommunicationServer::command_callback(const interfaces::msg::Command & msg)
       handle_simple_move(msg.x);
       break;
     case MotionID::PUBLISH_NAV_POINT:
-      handle_publish_nav_point();
+      handle_publish_nav_point(msg.x,msg.y);
       break;
     case MotionID::START_CHARGING:
       handle_start_charging();
@@ -111,8 +113,23 @@ void CommunicationServer::handle_simple_move(double distance) const {
   cmd_publisher_->publish(message);
 }
 
-void CommunicationServer::handle_publish_nav_point() const {
+void CommunicationServer::handle_publish_nav_point(double nav_x,double nav_y) const {
   RCLCPP_INFO(this->get_logger(), "Handling publish navigation point.");
+  auto message = geometry_msgs::msg::PoseStamped();
+  // message.header.stamp = this->get_clock()->now();
+  message.header.frame_id = "map";
+
+  // 设置目标点的坐标和方向
+  message.pose.position.x = nav_x;
+  message.pose.position.y = nav_y;
+  message.pose.position.z = 0.0;
+  message.pose.orientation.x = 0.0;
+  message.pose.orientation.y = 0.0;
+  message.pose.orientation.z = 0.0;
+  message.pose.orientation.w = 1.0;
+
+  RCLCPP_INFO(this->get_logger(), "Publishing goal: (%.2f, %.2f)", message.pose.position.x, message.pose.position.y);
+  nav_publisher_->publish(message);
 }
 
 void CommunicationServer::handle_start_charging() const {

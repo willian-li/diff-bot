@@ -9,6 +9,7 @@
 #include "interfaces/msg/sensor_config.hpp"       
 #include "interfaces/msg/command.hpp"
 #include "geometry_msgs/msg/twist.hpp"
+#include "geometry_msgs/msg/pose_stamped.hpp" 
 
 #include "lifecycle_msgs/msg/state.hpp"
 #include "lifecycle_msgs/msg/transition.hpp"
@@ -57,7 +58,7 @@ private:
   void handle_start_recognizing_speech() const;
   void handle_face_enrollment() const;
   void handle_simple_move(double distance) const;
-  void handle_publish_nav_point() const;
+  void handle_publish_nav_point(double nav_x,double nav_y) const;
   void handle_start_charging() const;
   void handle_spin_in_place();
   void handle_stop_speaking_or_moving() const;
@@ -72,7 +73,9 @@ private:
   rclcpp::Subscription<interfaces::msg::SensorConfig>::SharedPtr sorcfg_sub_;
   rclcpp::Subscription<interfaces::msg::Command>::SharedPtr command_sub_;
   
+  //本地发送 直接执行
   rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr cmd_publisher_;
+  rclcpp::Publisher<geometry_msgs::msg::PoseStamped>::SharedPtr nav_publisher_;
 
   //回调组
   rclcpp::CallbackGroup::SharedPtr client_cb_group_;

@@ -62,7 +62,7 @@ static void show_result(char *string, char is_over) {
 
 static char *g_result = NULL;
 static unsigned int g_buffersize = BUFFER_SIZE;
-
+rclcpp::Publisher<std_msgs::msg::String>::SharedPtr speech_publisher_;
 
 void processSpeechRecognizer() {
   std::string file = "output.wav";
@@ -75,7 +75,29 @@ void processSpeechRecognizer() {
   cout << "微软转文字...\n";
   auto result = speechRecognizer->RecognizeOnceAsync().get();
   // Checks result.
-  cout << "RECOGNIZED: Text=" << result->Text << std::endl;
+  if (result->Reason == ResultReason::RecognizedSpeech)
+  {
+    std::cout << "RECOGNIZED: Text=" << result->Text << std::endl;
+    auto message = std_msgs::msg::String();
+    message.data = result->Text;
+    speech_publisher_->publish(message);
+  }
+  else if (result->Reason == ResultReason::NoMatch)
+  {
+      std::cout << "NOMATCH: Speech could not be recognized." << std::endl;
+  }
+  else if (result->Reason == ResultReason::Canceled)
+  {
+      auto cancellation = CancellationDetails::FromResult(result);
+      std::cout << "CANCELED: Reason=" << (int)cancellation->Reason << std::endl;
+
+      if (cancellation->Reason == CancellationReason::Error)
+      {
+          std::cout << "CANCELED: ErrorCode=" << (int)cancellation->ErrorCode << std::endl;
+          std::cout << "CANCELED: ErrorDetails=" << cancellation->ErrorDetails << std::endl;
+          std::cout << "CANCELED: Did you set the speech resource key and region values?" << std::endl;
+      }
+  }
 }
 
 void on_result(const char *result, char is_last) {
@@ -198,6 +220,8 @@ int main(int argc, char **argv) {
   auto node = rclcpp::Node::make_shared("speech_recognition_node");
   auto chatter_pub = node->create_publisher<std_msgs::msg::String>("chatter", 1000);
   auto sub_awake = node->create_subscription<std_msgs::msg::Int32>("/mic/awake/angle", 10, awake_callback);
+  //发送文字初始化
+  speech_publisher_ = node->create_publisher<std_msgs::msg::String>("/speech_text", 10);
   rclcpp::Rate loop_rate(10);
   RCLCPP_INFO(node->get_logger(), "%s\n", "init success");
 
